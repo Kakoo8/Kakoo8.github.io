@@ -1,117 +1,1043 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claudio Urrutia · Ingeniero de datos y software</title>
-<meta name="description" content="Claudio Urrutia, Ingeniero en Ejecución Informática con 5 años de experiencia en ingeniería de datos, desarrollo de software y cloud.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#e9eef1; --ink:#12293a; --soft:#4a6072; --line:#b9c6cf; --accent:#2a4fe0;
-    --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
-    --text:"Source Serif 4",Georgia,serif;
-  }
-  @media (prefers-color-scheme:dark){
-    :root{--bg:#0e1b26; --ink:#e6eef3; --soft:#9db0be; --line:#294052; --accent:#7f9bff}
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0}
-  body{background:var(--bg); color:var(--ink); font-family:var(--text); font-size:1.125rem; line-height:1.6;
-       padding:clamp(1.25rem,4vw,3rem)}
-  .wrap{max-width:1100px}
-  header{font-family:var(--display); font-weight:700; color:var(--soft); font-size:1rem}
-  h1{font-family:var(--display); font-weight:800; line-height:.92; letter-spacing:-.035em;
-     font-size:clamp(3.5rem,15vw,11.5rem); margin:2rem 0 1.25rem; animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
-  h1 span{display:block}
-  h1 .ap{color:var(--accent)}
-  .role{font-family:var(--display); font-weight:700; font-size:clamp(1.2rem,2.6vw,1.7rem); margin:0 0 3rem; max-width:30em; line-height:1.25}
-  @keyframes rise{from{opacity:0;transform:translateY(.25em)}to{opacity:1;transform:none}}
-  section{border-top:2px solid var(--ink); padding:1.5rem 0 2.5rem}
-  h2{font-family:var(--display); font-size:1.1rem; font-weight:800; margin:0 0 1rem}
-  p{margin:0 0 1em; max-width:36em}
-  .two{display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(1.5rem,5vw,4rem)}
-  ul{list-style:none; margin:0; padding:0}
-  li{padding:.35rem 0; border-bottom:1px solid var(--line)}
-  .areas{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.75rem clamp(1.5rem,5vw,4rem)}
-  .areas h3{font-family:var(--display); font-size:1.05rem; font-weight:700; margin:0 0 .25rem; color:var(--accent)}
-  .areas p{font-size:1rem; margin:0}
-  .stack{margin:0}
-  .stack > div{display:grid; grid-template-columns:minmax(0,13rem) minmax(0,1fr); gap:1rem; padding:.6rem 0; border-bottom:1px solid var(--line)}
-  .stack dt{font-family:var(--display); font-weight:700}
-  .stack dd{margin:0}
-  a{color:var(--ink); text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.2em}
-  a:hover{color:var(--accent)}
-  a:focus-visible{outline:3px solid var(--accent); outline-offset:3px}
-  footer{color:var(--soft); font-size:.95rem; border-top:1px solid var(--line); padding-top:1rem}
-  @media (max-width:720px){.two,.areas,.stack > div{grid-template-columns:1fr}.stack > div{gap:.1rem}}
-  @media (prefers-reduced-motion:reduce){h1{animation:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Claudio Urrutia · Software Engineer & Data Engineer</title>
+
+  <meta name="description" content="Claudio Urrutia, Ingeniero en Ejecución Informática con más de 5 años de experiencia en desarrollo de software, ingeniería de datos y Cloud Computing.">
+  <meta name="author" content="Claudio Urrutia">
+  <meta name="theme-color" content="#e9eef1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #e9eef1;
+      --ink: #12293a;
+      --soft: #4a6072;
+      --line: #b9c6cf;
+      --accent: #2a4fe0;
+
+      --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+      --text: "Source Serif 4", Georgia, serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1b26;
+        --ink: #e6eef3;
+        --soft: #9db0be;
+        --line: #294052;
+        --accent: #7f9bff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      margin: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--text);
+      font-size: 1.125rem;
+      line-height: 1.6;
+      padding: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      font-family: var(--display);
+      font-weight: 700;
+      color: var(--soft);
+      font-size: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: .9rem;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-weight: 800;
+      line-height: .92;
+      letter-spacing: -.035em;
+      font-size: clamp(3.5rem, 15vw, 11.5rem);
+      margin: 2rem 0 1.25rem;
+      animation: rise .9s cubic-bezier(.2,.7,.2,1) both;
+    }
+
+    h1 span {
+      display: block;
+    }
+
+    h1 .ap {
+      color: var(--accent);
+    }
+
+    .role {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+      margin: 0 0 1.5rem;
+      max-width: 30em;
+      line-height: 1.25;
+    }
+
+    .intro-meta {
+      font-family: var(--display);
+      font-size: .9rem;
+      color: var(--soft);
+      margin-bottom: 3rem;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(.25em);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    section {
+      border-top: 2px solid var(--ink);
+      padding: 1.5rem 0 2.5rem;
+      scroll-margin-top: 2rem;
+    }
+
+    h2 {
+      font-family: var(--display);
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin: 0 0 1rem;
+    }
+
+    p {
+      margin: 0 0 1em;
+      max-width: 36em;
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: clamp(1.5rem, 5vw, 4rem);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: .35rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .areas {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.75rem clamp(1.5rem, 5vw, 4rem);
+    }
+
+    .areas h3,
+    .project h3,
+    .experience h3 {
+      font-family: var(--display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0 0 .25rem;
+      color: var(--accent);
+    }
+
+    .areas p,
+    .project p,
+    .experience p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .experience {
+      display: grid;
+      grid-template-columns: minmax(10rem, 13rem) minmax(0, 1fr);
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .period {
+      font-family: var(--display);
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--soft);
+    }
+
+    .company {
+      font-family: var(--display);
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: .15rem;
+    }
+
+    .position {
+      font-family: var(--display);
+      font-size: .95rem;
+      font-weight: 700;
+      margin-bottom: .75rem;
+    }
+
+    .experience ul {
+      margin-top: .65rem;
+    }
+
+    .experience li {
+      font-size: .95rem;
+      border: 0;
+      padding: .2rem 0;
+    }
+
+    .client {
+      margin-top: 1.25rem;
+      padding-left: 1rem;
+      border-left: 2px solid var(--line);
+    }
+
+    .client-title {
+      font-family: var(--display);
+      font-size: .95rem;
+      font-weight: 700;
+      margin-bottom: .4rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .number {
+      font-family: var(--display);
+      font-size: .85rem;
+      color: var(--soft);
+      margin-bottom: .5rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      margin-top: .8rem;
+    }
+
+    .tags span {
+      font-family: var(--display);
+      font-size: .75rem;
+      color: var(--soft);
+      border: 1px solid var(--line);
+      padding: .15rem .5rem;
+      border-radius: 3px;
+    }
+
+    .stack {
+      margin: 0;
+    }
+
+    .stack > div {
+      display: grid;
+      grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
+      gap: 1rem;
+      padding: .6rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stack dt {
+      font-family: var(--display);
+      font-weight: 700;
+    }
+
+    .stack dd {
+      margin: 0;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: .2em;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    footer {
+      color: var(--soft);
+      font-size: .95rem;
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .two,
+      .areas,
+      .projects,
+      .experience,
+      .stack > div {
+        grid-template-columns: 1fr;
+      }
+
+      .experience {
+        gap: .4rem;
+      }
+
+      .stack > div {
+        gap: .1rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      h1 {
+        animation: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
 <div class="wrap">
-  <header>Portafolio</header>
 
-  <h1><span>Claudio</span><span class="ap">Urrutia</span></h1>
-  <p class="role">Ingeniero en Ejecución Informática. Ingeniería de datos, desarrollo de software y cloud.</p>
+  <header>
+    <span>Portafolio</span>
 
-  <section>
-    <div class="two">
-      <div>
-        <h2>Sobre mí</h2>
-        <p>Tengo cerca de 5 años de experiencia en ingeniería de datos, desarrollo de software y optimización de procesos tecnológicos, en proyectos para empresas de gran envergadura.</p>
-        <p>He participado en el diseño, desarrollo, mantenimiento y optimización de soluciones tecnológicas, combinando backend, procesamiento de datos, automatización y servicios cloud. También en iniciativas de migración de datos, modernización de procesos, integración de plataformas y optimización de infraestructura.</p>
-        <p>Me interesan la ingeniería de software, las arquitecturas escalables, los sistemas orientados a datos y la integración de tecnologías cloud, para desarrollar soluciones eficientes, mantenibles y alineadas con las necesidades del negocio.</p>
+    <nav aria-label="Navegación principal">
+      <a href="#about">Perfil</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#stack">Tecnologías</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INTRODUCCIÓN -->
+
+    <h1>
+      <span>Claudio</span>
+      <span class="ap">Urrutia</span>
+    </h1>
+
+    <p class="role">
+      Ingeniero en Ejecución Informática.
+      Software Engineering, Data Engineering & Cloud.
+    </p>
+
+    <p class="intro-meta">
+      Santiago, Chile · +5 años de experiencia
+    </p>
+
+    <!-- SOBRE MÍ -->
+
+    <section id="about">
+      <div class="two">
+
+        <div>
+          <h2>Sobre mí</h2>
+
+          <p>
+            Soy Ingeniero en Ejecución Informática con más de
+            5 años de experiencia en desarrollo de software,
+            ingeniería de datos y optimización de procesos
+            tecnológicos, participando en proyectos para
+            empresas como Acid Labs, Deloitte y Cencosud,
+            y trabajando con clientes como BHP, LATAM y CMPC.
+          </p>
+
+          <p>
+            Mi trayectoria combina el desarrollo Full Stack
+            y Backend con la ingeniería de datos y las
+            plataformas Cloud. He trabajado en el desarrollo
+            y mantenimiento de aplicaciones empresariales,
+            integración de microservicios, automatización
+            de procesos y administración de pipelines de datos.
+          </p>
+
+          <p>
+            Tengo experiencia trabajando con Python, SQL,
+            Apache Airflow, BigQuery, PostgreSQL, Google Cloud
+            Platform y Microsoft Azure, participando en
+            iniciativas de migración de datos, optimización
+            de sistemas e integración de servicios.
+          </p>
+
+          <p>
+            Me interesa especialmente la ingeniería de software,
+            las arquitecturas escalables, los sistemas
+            distribuidos y la construcción de soluciones
+            eficientes, mantenibles y orientadas a las
+            necesidades del negocio.
+          </p>
+        </div>
+
+        <div>
+          <h2>Empresas y proyectos</h2>
+
+          <ul>
+            <li>Acid Labs / Equifax</li>
+            <li>Deloitte</li>
+            <li>Cencosud</li>
+            <li>BHP</li>
+            <li>LATAM</li>
+            <li>CMPC</li>
+          </ul>
+        </div>
+
       </div>
-      <div>
-        <h2>He trabajado en proyectos para</h2>
-        <ul>
-          <li>BHP</li>
-          <li>LATAM</li>
-          <li>CMPC</li>
-        </ul>
+    </section>
+
+    <!-- EXPERIENCIA PROFESIONAL -->
+
+    <section id="experience">
+      <h2>Experiencia profesional</h2>
+
+      <!-- ACID LABS -->
+
+      <article class="experience">
+
+        <div class="period">
+          Abr. 2025 — Actualidad
+          <br>
+          <small>Jornada completa · Híbrido</small>
+        </div>
+
+        <div>
+          <div class="company">Acid Labs / Equifax</div>
+
+          <div class="position">
+            Full Stack Developer
+          </div>
+
+          <p>
+            Desarrollo y mantenimiento de soluciones Full Stack
+            y servicios backend para aplicaciones empresariales,
+            contribuyendo a la integración de sistemas,
+            escalabilidad y mejoras en producción.
+          </p>
+
+          <ul>
+            <li>
+              Desarrollo e integración de servicios backend
+              y microservicios que soportan procesos de
+              facturación para Ecuador, El Salvador y Honduras.
+            </li>
+
+            <li>
+              Integración de servicios y APIs utilizando
+              Google Cloud Platform.
+            </li>
+
+            <li>
+              Implementación e integración de mensajería
+              mediante Google Cloud Pub/Sub para comunicación
+              asíncrona entre servicios.
+            </li>
+
+            <li>
+              Trabajo con microservicios desplegados en
+              Google Kubernetes Engine (GKE).
+            </li>
+
+            <li>
+              Participación en desarrollo frontend y backend,
+              decisiones técnicas y mejoras continuas
+              en ambientes productivos.
+            </li>
+
+            <li>
+              Enfoque en mantenibilidad del código,
+              rendimiento e integración confiable
+              entre sistemas empresariales.
+            </li>
+          </ul>
+        </div>
+
+      </article>
+
+      <!-- DELOITTE -->
+
+      <article class="experience">
+
+        <div class="period">
+          Jul. 2022 — Oct. 2024
+          <br>
+          <small>2 años y 4 meses · Híbrido</small>
+        </div>
+
+        <div>
+          <div class="company">Deloitte</div>
+
+          <div class="position">
+            Full Stack Developer
+          </div>
+
+          <p>
+            Participación en distintos proyectos de desarrollo
+            Full Stack e ingeniería de datos, contribuyendo
+            al diseño, desarrollo y mejora continua de
+            aplicaciones y sistemas empresariales.
+          </p>
+
+          <ul>
+            <li>
+              Desarrollo y mantenimiento de aplicaciones
+              y servicios backend.
+            </li>
+
+            <li>
+              Diseño y mantenimiento de pipelines de datos
+              y procesos ETL utilizando tecnologías Cloud.
+            </li>
+
+            <li>
+              Optimización de consultas SQL, procesamiento
+              de datos y rendimiento de servicios.
+            </li>
+
+            <li>
+              Administración y soporte de sistemas
+              productivos, asegurando disponibilidad
+              y continuidad operacional.
+            </li>
+
+            <li>
+              Participación en pipelines CI/CD,
+              infraestructura Cloud y procesos de despliegue.
+            </li>
+
+            <li>
+              Colaboración con equipos técnicos y stakeholders
+              para transformar necesidades de negocio
+              en soluciones tecnológicas.
+            </li>
+          </ul>
+
+          <!-- PROYECTO CMPC -->
+
+          <div class="client">
+            <div class="client-title">
+              CMPC · Full Stack Developer
+              <span class="period">(Abr. 2024 — Sep. 2024)</span>
+            </div>
+
+            <ul>
+              <li>
+                Desarrollo de aplicaciones Full Stack
+                utilizando React y Google Cloud Functions.
+              </li>
+
+              <li>
+                Implementación de lógica backend
+                y procesos ETL en GCP.
+              </li>
+
+              <li>
+                Optimización de tiempos de respuesta
+                e integración de datos entre servicios.
+              </li>
+            </ul>
+          </div>
+
+          <!-- PROYECTO LATAM -->
+
+          <div class="client">
+            <div class="client-title">
+              LATAM · Big Data Engineer
+              <span class="period">(Nov. 2023 — Mar. 2024)</span>
+            </div>
+
+            <ul>
+              <li>
+                Análisis y migración de procesos
+                desde Oracle hacia BigQuery.
+              </li>
+
+              <li>
+                Optimización de consultas y procesos,
+                logrando reducciones significativas
+                en tiempos de ejecución.
+              </li>
+
+              <li>
+                Análisis de nomenclaturas SAP para
+                asegurar consistencia y calidad de datos.
+              </li>
+
+              <li>
+                Validación y comparación de resultados
+                entre sistemas heredados y nuevos
+                pipelines de datos.
+              </li>
+            </ul>
+          </div>
+
+          <!-- SISTEMAS PRODUCTIVOS -->
+
+          <div class="client">
+            <div class="client-title">
+              Sistemas de análisis de datos ·
+              Full Stack Developer
+              <span class="period">(Jul. 2022 — Sep. 2023)</span>
+            </div>
+
+            <ul>
+              <li>
+                Responsabilidad técnica sobre sistemas
+                productivos de análisis de datos.
+              </li>
+
+              <li>
+                Diseño, desarrollo y mantenimiento
+                de DAGs en Apache Airflow para
+                ingesta y transformación de datos.
+              </li>
+
+              <li>
+                Optimización de consultas SQL complejas
+                para mejorar el rendimiento.
+              </li>
+
+              <li>
+                Administración de bases de datos
+                PostgreSQL y servidores Linux.
+              </li>
+
+              <li>
+                Implementación y mantenimiento de
+                pipelines CI/CD mediante Azure DevOps.
+              </li>
+
+              <li>
+                Automatización de procesos críticos
+                y reducción de tareas manuales.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CENCOSUD -->
+
+      <article class="experience">
+
+        <div class="period">
+          Mar. 2021 — Jul. 2022
+          <br>
+          <small>1 año y 5 meses · Híbrido</small>
+        </div>
+
+        <div>
+          <div class="company">Cencosud S.A.</div>
+
+          <div class="position">
+            Full Stack Developer Jr.
+          </div>
+
+          <p>
+            Soporte técnico y mejora continua de sistemas
+            en el área de Flex Jumbo, participando en
+            el mantenimiento de aplicaciones, automatización
+            de procesos e integración de servicios.
+          </p>
+
+          <ul>
+            <li>
+              Mantenimiento y configuración de Apache Airflow.
+            </li>
+
+            <li>
+              Creación y optimización de DAGs
+              para tareas recurrentes.
+            </li>
+
+            <li>
+              Optimización de consultas SQL para
+              mejorar el rendimiento.
+            </li>
+
+            <li>
+              Diagnóstico y resolución de problemas
+              frontend y backend.
+            </li>
+
+            <li>
+              Creación, administración y mantenimiento
+              de pipelines de despliegue en Azure DevOps.
+            </li>
+
+            <li>
+              Integración del sistema de control horario
+              GeoVictoria, permitiendo visualizar
+              marcaciones en tiempo real en el frontend.
+            </li>
+
+            <li>
+              Comunicación directa con usuarios
+              para identificar necesidades y resolver
+              incidencias operacionales.
+            </li>
+          </ul>
+        </div>
+
+      </article>
+
+    </section>
+
+    <!-- ÁREAS DE EXPERIENCIA -->
+
+    <section id="areas">
+      <h2>Áreas de experiencia</h2>
+
+      <div class="areas">
+
+        <div>
+          <h3>Software Engineering</h3>
+          <p>
+            Desarrollo y mantenimiento de aplicaciones
+            empresariales, integración de servicios
+            y mejora continua de sistemas productivos.
+          </p>
+        </div>
+
+        <div>
+          <h3>Data Engineering</h3>
+          <p>
+            Diseño y optimización de procesos ETL/ELT,
+            automatización de flujos de datos y
+            administración de pipelines utilizando
+            Python, SQL y Apache Airflow.
+          </p>
+        </div>
+
+        <div>
+          <h3>Backend & Microservices</h3>
+          <p>
+            Desarrollo e integración de servicios backend,
+            APIs y microservicios, incluyendo arquitecturas
+            basadas en eventos y comunicación asíncrona.
+          </p>
+        </div>
+
+        <div>
+          <h3>Cloud Computing</h3>
+          <p>
+            Integración y trabajo con soluciones en
+            Google Cloud Platform y Microsoft Azure,
+            incluyendo servicios de procesamiento,
+            mensajería y despliegue.
+          </p>
+        </div>
+
+        <div>
+          <h3>Full Stack Development</h3>
+          <p>
+            Desarrollo y mantenimiento de aplicaciones web
+            utilizando React, Angular, Node.js y Django.
+          </p>
+        </div>
+
+        <div>
+          <h3>Databases & DevOps</h3>
+          <p>
+            Optimización SQL, administración de PostgreSQL,
+            Oracle y BigQuery, además de automatización
+            y pipelines de integración y despliegue continuo.
+          </p>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>Áreas de experiencia</h2>
-    <div class="areas">
-      <div><h3>Data engineering</h3><p>Desarrollo y optimización de procesos ETL/ELT, automatización de flujos de datos y administración de pipelines con Python, SQL y Apache Airflow.</p></div>
-      <div><h3>Cloud y plataformas de datos</h3><p>Implementación y gestión de soluciones en Google Cloud Platform y Microsoft Azure: procesamiento, integración y despliegue.</p></div>
-      <div><h3>Backend</h3><p>Desarrollo y mantenimiento de aplicaciones y servicios con Python, Django, Node.js y Java.</p></div>
-      <div><h3>Full-stack</h3><p>Desarrollo y mantenimiento de aplicaciones web con React y Angular.</p></div>
-      <div><h3>Bases de datos</h3><p>Optimización de consultas SQL, administración de PostgreSQL y trabajo con BigQuery y Oracle.</p></div>
-      <div><h3>DevOps y automatización</h3><p>Automatización de procesos, gestión de pipelines de despliegue y herramientas de integración continua.</p></div>
-    </div>
-  </section>
+    <!-- PROYECTOS DESTACADOS -->
 
-  <section>
-    <h2>Tecnologías y herramientas</h2>
-    <dl class="stack">
-      <div><dt>Lenguajes</dt><dd>Python, SQL, Java, JavaScript</dd></div>
-      <div><dt>Data engineering</dt><dd>Apache Airflow, BigQuery</dd></div>
-      <div><dt>Cloud</dt><dd>Google Cloud Platform, Microsoft Azure</dd></div>
-      <div><dt>Backend</dt><dd>Django, Node.js, Spring Boot</dd></div>
-      <div><dt>Frontend</dt><dd>React, Angular</dd></div>
-      <div><dt>Bases de datos</dt><dd>PostgreSQL, Oracle</dd></div>
-      <div><dt>DevOps</dt><dd>GitHub, Jenkins, CI/CD</dd></div>
-    </dl>
-  </section>
+    <section id="projects">
+      <h2>Proyectos destacados</h2>
 
-  <section>
-    <h2>Contacto</h2>
-    <!-- EDITA: reemplaza con tus enlaces reales -->
-    <ul>
-      <li><a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li>
-      <li><a href="https://www.linkedin.com/in/tu-usuario">LinkedIn</a></li>
-      <li><a href="https://github.com/tu-usuario">GitHub</a></li>
-    </ul>
-  </section>
+      <div class="projects">
 
-  <footer>Santiago, Chile</footer>
+        <article class="project">
+          <div class="number">01 / CLOUD ARCHITECTURE</div>
+
+          <h3>Integración de microservicios</h3>
+
+          <p>
+            Desarrollo e integración de servicios backend
+            para procesos de facturación multinacionales.
+            Trabajo con comunicación asíncrona mediante
+            mensajería y servicios desplegados en
+            infraestructura Kubernetes.
+          </p>
+
+          <div class="tags">
+            <span>GCP</span>
+            <span>Pub/Sub</span>
+            <span>GKE</span>
+            <span>Microservices</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="number">02 / DATA ENGINEERING</div>
+
+          <h3>Migración de Oracle a BigQuery</h3>
+
+          <p>
+            Análisis y migración de procesos de datos
+            desde Oracle hacia BigQuery, incluyendo
+            optimización de consultas, análisis de
+            nomenclaturas SAP y validación de información.
+          </p>
+
+          <div class="tags">
+            <span>SQL</span>
+            <span>Oracle</span>
+            <span>BigQuery</span>
+            <span>GCP</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="number">03 / DATA PIPELINES</div>
+
+          <h3>Automatización con Apache Airflow</h3>
+
+          <p>
+            Diseño, administración y optimización
+            de DAGs para procesos de ingesta y
+            transformación de datos, mejorando
+            el rendimiento y la continuidad operacional.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>Apache Airflow</span>
+            <span>SQL</span>
+            <span>PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="number">04 / FULL STACK DEVELOPMENT</div>
+
+          <h3>Aplicaciones web empresariales</h3>
+
+          <p>
+            Desarrollo y mantenimiento de aplicaciones
+            Full Stack, implementando componentes frontend,
+            lógica backend y servicios de integración
+            en entornos Cloud.
+          </p>
+
+          <div class="tags">
+            <span>React</span>
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>Django</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="number">05 / DEVOPS & AUTOMATION</div>
+
+          <h3>Automatización de despliegues</h3>
+
+          <p>
+            Implementación y mantenimiento de pipelines
+            de integración y despliegue continuo,
+            automatización de tareas y soporte
+            de sistemas productivos.
+          </p>
+
+          <div class="tags">
+            <span>Azure DevOps</span>
+            <span>Jenkins</span>
+            <span>CI/CD</span>
+            <span>GitHub</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="number">06 / SYSTEM INTEGRATION</div>
+
+          <h3>Integración de sistemas empresariales</h3>
+
+          <p>
+            Integración de servicios externos y sistemas
+            operacionales, incluyendo la conexión de
+            GeoVictoria para visualizar marcaciones
+            de asistencia en tiempo real.
+          </p>
+
+          <div class="tags">
+            <span>APIs</span>
+            <span>JavaScript</span>
+            <span>Frontend</span>
+            <span>Backend</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+
+    <section id="stack">
+      <h2>Tecnologías y herramientas</h2>
+
+      <dl class="stack">
+
+        <div>
+          <dt>Lenguajes</dt>
+          <dd>Python, SQL, Java, JavaScript</dd>
+        </div>
+
+        <div>
+          <dt>Data Engineering</dt>
+          <dd>Apache Airflow, BigQuery, ETL/ELT</dd>
+        </div>
+
+        <div>
+          <dt>Cloud</dt>
+          <dd>Google Cloud Platform, Microsoft Azure</dd>
+        </div>
+
+        <div>
+          <dt>Cloud Services</dt>
+          <dd>Google Cloud Pub/Sub, Cloud Functions, Google Kubernetes Engine</dd>
+        </div>
+
+        <div>
+          <dt>Backend</dt>
+          <dd>Python, Django, Node.js, Java, Spring Boot</dd>
+        </div>
+
+        <div>
+          <dt>Frontend</dt>
+          <dd>React, Angular</dd>
+        </div>
+
+        <div>
+          <dt>Bases de datos</dt>
+          <dd>PostgreSQL, Oracle, BigQuery</dd>
+        </div>
+
+        <div>
+          <dt>DevOps</dt>
+          <dd>Azure DevOps, Jenkins, GitHub, CI/CD</dd>
+        </div>
+
+        <div>
+          <dt>Infraestructura</dt>
+          <dd>Linux, Kubernetes, Microservices</dd>
+        </div>
+
+      </dl>
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contact">
+      <h2>Contacto</h2>
+
+      <p>
+        ¿Tienes un proyecto interesante o una oportunidad
+        profesional? Puedes contactarme a través de
+        cualquiera de estos medios.
+      </p>
+
+      <ul>
+        <li>
+          <a href="mailto:claudio.urrutia.b@usach.cl">
+            claudio.urrutia.b@usach.cl
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/claudio-urrutia-bermudez/"
+             target="_blank"
+             rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/Kakoo8"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Santiago, Chile · Claudio Urrutia · 2026
+  </footer>
+
 </div>
 </body>
 </html>
